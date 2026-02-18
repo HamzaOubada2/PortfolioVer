@@ -7,37 +7,14 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "Distributed Task Queue System",
-        description:
-            "A high-throughput distributed task queue built with Go and Redis. Features include priority queuing, delayed tasks, and graceful shutdown handling. Designed to handle 10k+ concurrent jobs with 99.9% reliability.",
-        tech: ["Go", "Redis", "gRPC", "Docker"],
+        title: "Freelancer Focus App",
+        description:"A professional management engine featuring a modular NestJS/PostgreSQL backend and a responsive Next.js interface.",
+        tech: ["NestJs", "Postgresql", "React", "Tailwind Css"],
         links: {
-            github: "https://github.com",
-            demo: "https://demo.com",
+            github: "https://github.com/HamzaOubada2/Freelancer",
+            demo: "",
         },
         metrics: ["10k+ TPS", "50ms Latency"],
-    },
-    {
-        title: "E-Commerce Microservices API",
-        description:
-            "Scalable e-commerce backend implementing event-driven architecture using Apache Kafka. Services include Order Processing, Inventory Management, and Payment Gateway integration with idempotent operations.",
-        tech: ["Node.js", "Express", "Kafka", "PostgreSQL", "Kubernetes"],
-        links: {
-            github: "https://github.com",
-            demo: null,
-        },
-        metrics: ["Event-Driven", "Idempotent"],
-    },
-    {
-        title: "Secure Auth Provider",
-        description:
-            "OAuth2.0 and OpenID Connect compliant identity provider. Implements JWT refresh rotation, MFA support, and role-based access control (RBAC). Audited for OWASP Top 10 vulnerabilities.",
-        tech: ["Python", "Django", "PostgreSQL", "OAuth2", "Redis"],
-        links: {
-            github: "https://github.com",
-            demo: "https://demo.com",
-        },
-        metrics: ["OAuth 2.0", "MFA Support"],
     },
 ];
 
