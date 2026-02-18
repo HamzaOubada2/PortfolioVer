@@ -5,7 +5,8 @@ import {
     siNodedotjs, siTypescript, siGo, siPython, siPostgresql,
     siMongodb, siRedis, siElasticsearch,
     siDocker, siKubernetes, siTerraform, siNginx, siGraphql, siApachekafka,
-    siReact, siNextdotjs, siHtml5, siGit
+    siReact, siNextdotjs, siHtml5, siGit,
+    siPhp
 } from "simple-icons/icons";
 // Check if siAmazonwebservices exists, usually it's siAmazonaws? No, it IS siAmazonwebservices in latest.
 // But maybe the version installed is older or newer.
@@ -45,8 +46,8 @@ const skillCategories = [
         skills: [
             { name: "Node.js", icon: siNodedotjs },
             { name: "TypeScript", icon: siTypescript },
-            { name: "Go", icon: siGo },
             { name: "Python", icon: siPython },
+            { name: "Php", icon: siPhp },
         ],
     },
     {
