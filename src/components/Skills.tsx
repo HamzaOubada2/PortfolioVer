@@ -21,6 +21,15 @@ import {
   siHtml5,
   siGit,
   siPhp,
+  siJavascript,
+  siNestjs,
+  siExpress,
+  siLaravel,
+  siCss,
+  siTailwindcss,
+  siSwagger,
+  siFigma,
+  siMysql,
 } from "simple-icons/icons";
 // Check if siAmazonwebservices exists, usually it's siAmazonaws? No, it IS siAmazonwebservices in latest.
 // But maybe the version installed is older or newer.
@@ -58,10 +67,26 @@ const skillCategories = [
   {
     title: "Languages",
     skills: [
-      { name: "Node.js", icon: siNodedotjs },
+      { name: "Html", icon: siHtml5 },
+      { name: "Css", icon: siCss },
+      { name: "JavaScript", icon: siJavascript },
       { name: "TypeScript", icon: siTypescript },
       { name: "Python", icon: siPython },
       { name: "Php", icon: siPhp },
+    ],
+  },
+  {
+    title: "Frameworks & Tools",
+    skills: [
+      { name: "ReactJs", icon: siReact },
+      { name: "Nodejs", icon: siNodedotjs },
+      { name: "NestJs", icon: siNestjs },
+      { name: "ExpressJs", icon: siExpress },
+      { name: "Laravel", icon: siLaravel },
+      { name: "TailwindCss", icon: siTailwindcss },
+      { name: "Git/Github", icon: siGit },
+      { name: "Swagger", icon: siSwagger },
+      { name: "Figma", icon: siFigma },
     ],
   },
   {
@@ -70,17 +95,7 @@ const skillCategories = [
       { name: "PostgreSQL", icon: siPostgresql },
       { name: "MongoDB", icon: siMongodb },
       { name: "Redis", icon: siRedis },
-      { name: "Elasticsearch", icon: siElasticsearch },
-    ],
-  },
-  {
-    title: "Backend & Cloud",
-    skills: [
-      { name: "Docker", icon: siDocker },
-      { name: "Kubernetes", icon: siKubernetes },
-      { name: "Kafka", icon: siApachekafka },
-      { name: "Nginx", icon: siNginx },
-      { name: "Terraform", icon: siTerraform },
+      { name: "Mysql", icon: siMysql },
     ],
   },
 ];
