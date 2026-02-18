@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
                     <Terminal size={24} />
-                    <span>hamza.backend</span>
+                    <span>hamzaDev</span>
                 </Link>
 
                 {/* Desktop Menu */}
