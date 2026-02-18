@@ -2,11 +2,25 @@
 
 import styles from "./Skills.module.css";
 import {
-    siNodedotjs, siTypescript, siGo, siPython, siPostgresql,
-    siMongodb, siRedis, siElasticsearch,
-    siDocker, siKubernetes, siTerraform, siNginx, siGraphql, siApachekafka,
-    siReact, siNextdotjs, siHtml5, siGit,
-    siPhp
+  siNodedotjs,
+  siTypescript,
+  siGo,
+  siPython,
+  siPostgresql,
+  siMongodb,
+  siRedis,
+  siElasticsearch,
+  siDocker,
+  siKubernetes,
+  siTerraform,
+  siNginx,
+  siGraphql,
+  siApachekafka,
+  siReact,
+  siNextdotjs,
+  siHtml5,
+  siGit,
+  siPhp,
 } from "simple-icons/icons";
 // Check if siAmazonwebservices exists, usually it's siAmazonaws? No, it IS siAmazonwebservices in latest.
 // But maybe the version installed is older or newer.
@@ -27,77 +41,77 @@ import {
 // I will attempt to remove Java and CSS3 from imports to fix the error.
 
 // Helper to render Simple Icon
-const SimpleIcon = ({ icon, color }: { icon: any, color?: string }) => (
-    <svg
-        role="img"
-        viewBox="0 0 24 24"
-        fill={color || "currentColor"}
-        width="24"
-        height="24"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path d={icon.path} />
-    </svg>
+const SimpleIcon = ({ icon, color }: { icon: any; color?: string }) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    fill={color || "currentColor"}
+    width="24"
+    height="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d={icon.path} />
+  </svg>
 );
 
 const skillCategories = [
-    {
-        title: "Languages",
-        skills: [
-            { name: "Node.js", icon: siNodedotjs },
-            { name: "TypeScript", icon: siTypescript },
-            { name: "Python", icon: siPython },
-            { name: "Php", icon: siPhp },
-        ],
-    },
-    {
-        title: "Databases & Stores",
-        skills: [
-            { name: "PostgreSQL", icon: siPostgresql },
-            { name: "MongoDB", icon: siMongodb },
-            { name: "Redis", icon: siRedis },
-            { name: "Elasticsearch", icon: siElasticsearch },
-        ],
-    },
-    {
-        title: "Backend & Cloud",
-        skills: [
-            { name: "Docker", icon: siDocker },
-            { name: "Kubernetes", icon: siKubernetes },
-            { name: "Kafka", icon: siApachekafka },
-            { name: "Nginx", icon: siNginx },
-            { name: "Terraform", icon: siTerraform },
-        ],
-    },
+  {
+    title: "Languages",
+    skills: [
+      { name: "Node.js", icon: siNodedotjs },
+      { name: "TypeScript", icon: siTypescript },
+      { name: "Python", icon: siPython },
+      { name: "Php", icon: siPhp },
+    ],
+  },
+  {
+    title: "Databases & Stores",
+    skills: [
+      { name: "PostgreSQL", icon: siPostgresql },
+      { name: "MongoDB", icon: siMongodb },
+      { name: "Redis", icon: siRedis },
+      { name: "Elasticsearch", icon: siElasticsearch },
+    ],
+  },
+  {
+    title: "Backend & Cloud",
+    skills: [
+      { name: "Docker", icon: siDocker },
+      { name: "Kubernetes", icon: siKubernetes },
+      { name: "Kafka", icon: siApachekafka },
+      { name: "Nginx", icon: siNginx },
+      { name: "Terraform", icon: siTerraform },
+    ],
+  },
 ];
 
 export default function Skills() {
-    return (
-        <section id="skills" className="container section">
-            <h2 className="section-title">
-                <span className="text-gradient">Technical Arsenal</span>
-            </h2>
-            <p className={styles.subtitle}>
-                Languages and technologies I use to build scalable systems.
-            </p>
+  return (
+    <section id="skills" className="container section">
+      <h2 className="section-title">
+        <span className="text-gradient">Technical Arsenal</span>
+      </h2>
+      <p className={styles.subtitle}>
+        Languages and technologies I use to build scalable systems.
+      </p>
 
-            <div className={styles.grid}>
-                {skillCategories.map((category, index) => (
-                    <div key={index} className={styles.categoryCard}>
-                        <h3>{category.title}</h3>
-                        <div className={styles.skillList}>
-                            {category.skills.map((skill, i) => (
-                                <div key={i} className={styles.skillItem} title={skill.name}>
-                                    <div className={styles.iconWrapper}>
-                                        <SimpleIcon icon={skill.icon} />
-                                    </div>
-                                    <span>{skill.name}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+      <div className={styles.grid}>
+        {skillCategories.map((category, index) => (
+          <div key={index} className={styles.categoryCard}>
+            <h3>{category.title}</h3>
+            <div className={styles.skillList}>
+              {category.skills.map((skill, i) => (
+                <div key={i} className={styles.skillItem} title={skill.name}>
+                  <div className={styles.iconWrapper}>
+                    <SimpleIcon icon={skill.icon} />
+                  </div>
+                  <span>{skill.name}</span>
+                </div>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
