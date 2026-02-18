@@ -21,11 +21,11 @@ export default function Contact() {
                 </Link>
 
                 <div className={styles.socials}>
-                    <Link href="https://linkedin.com" target="_blank" className={styles.socialLink}>
+                    <Link href="https://www.linkedin.com/in/hamza-oubada-4aa94b340/" target="_blank" className={styles.socialLink}>
                         <Linkedin size={24} />
                         <span>LinkedIn</span>
                     </Link>
-                    <Link href="https://github.com" target="_blank" className={styles.socialLink}>
+                    <Link href="https://github.com/HamzaOubada2" target="_blank" className={styles.socialLink}>
                         <Github size={24} />
                         <span>GitHub</span>
                     </Link>

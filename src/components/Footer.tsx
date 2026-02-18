@@ -23,9 +23,6 @@ export default function Footer() {
                             <a href="https://www.linkedin.com/in/hamza-oubada-4aa94b340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="oubham220@gmail.com" aria-label="Email">
-                                <Mail size={20} />
-                            </a>
                         </div>
                     </div>
                 </div>
