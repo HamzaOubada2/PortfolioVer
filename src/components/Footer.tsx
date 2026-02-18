@@ -17,13 +17,13 @@ export default function Footer() {
                     <div className={styles.links}>
                         <h4>Connect</h4>
                         <div className={styles.socials}>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://github.com/HamzaOubada2" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <Github size={20} />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/hamza-oubada-4aa94b340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="mailto:hello@example.com" aria-label="Email">
+                            <a href="oubham220@gmail.com" aria-label="Email">
                                 <Mail size={20} />
                             </a>
                         </div>
