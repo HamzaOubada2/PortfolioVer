@@ -1,0 +1,131 @@
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.grid {
+    display: grid;
+    /* Ensure cards don't overflow on very small screens by using min(100%, 350px) */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    gap: 2rem;
+}
+
+.projectCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+}
+
+.cardHeader {
+    margin-bottom: 1.5rem;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.projectIcon {
+    color: var(--accent-primary);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: var(--text-primary);
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.metrics {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.metricBadge {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    background: var(--accent-glow);
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 112, 243, 0.2);
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.techTag {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+        /* Force single column */
+        gap: 1.5rem;
+    }
+
+    .projectCard {
+        padding: 1.5rem;
+    }
+
+    .headerTop {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,60 @@
+.footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.brand h3 {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.brand p {
+    color: var(--text-secondary);
+    max-width: 300px;
+}
+
+.links h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials a {
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
