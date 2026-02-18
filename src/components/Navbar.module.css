@@ -123,10 +123,17 @@
 @media (max-width: 380px) {
     .mobileMenu {
         padding: 1rem;
+        gap: 1rem;
     }
 
     .mobileNavLink {
         font-size: 1.25rem;
+    }
+
+    .mobileThemeToggle {
+        padding: 0.75rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -134,6 +141,9 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-secondary);
+    padding: 0.5rem 0;
+    /* Increase touch target */
+    display: block;
 }
 
 .mobileNavLink:hover {
@@ -152,4 +162,6 @@
     font-size: 1.1rem;
     cursor: pointer;
     margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
 }

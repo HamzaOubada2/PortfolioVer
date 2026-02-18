@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { Points, PointMaterial } from "@react-three/drei";
 // explicit import path for reliability if possible, or just standard
 // If maath isn't installed, I'll use a simple custom buffer. 
@@ -14,19 +14,23 @@ import * as THREE from "three";
 function ParticleField() {
     const ref = useRef<THREE.Points>(null!);
 
-    // Generate particles
-    const particlesCount = 2000;
-    const positions = new Float32Array(particlesCount * 3);
-
-    for (let i = 0; i < particlesCount; i++) {
-        positions[i * 3] = (Math.random() - 0.5) * 10; // x
-        positions[i * 3 + 1] = (Math.random() - 0.5) * 10; // y
-        positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
-    }
+    // Generate particles - Memoized for performance
+    const particlesCount = 1500; // Reduced slightly for better mobile performance
+    const positions = useMemo(() => {
+        const pos = new Float32Array(particlesCount * 3);
+        for (let i = 0; i < particlesCount; i++) {
+            pos[i * 3] = (Math.random() - 0.5) * 10; // x
+            pos[i * 3 + 1] = (Math.random() - 0.5) * 10; // y
+            pos[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
+        }
+        return pos;
+    }, []);
 
     useFrame((state, delta) => {
-        ref.current.rotation.x -= delta / 10;
-        ref.current.rotation.y -= delta / 15;
+        if (ref.current) {
+            ref.current.rotation.x -= delta / 10;
+            ref.current.rotation.y -= delta / 15;
+        }
     });
 
     return (

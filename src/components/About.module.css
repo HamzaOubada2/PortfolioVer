@@ -110,3 +110,17 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 380px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .featureCard {
+        padding: 1.5rem;
+    }
+}

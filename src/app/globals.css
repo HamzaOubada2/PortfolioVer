@@ -101,15 +101,15 @@ code {
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     /* Standard mobile padding */
   }
 }
 
 @media (max-width: 380px) {
   .container {
-    padding: 0 1rem;
-    /* Compact mobile padding */
+    padding: 0 0.75rem;
+    /* Compact mobile padding for very small screens */
   }
 }
 
