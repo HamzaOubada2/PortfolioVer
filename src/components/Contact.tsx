@@ -23,7 +23,7 @@ export default function Contact() {
 
         <div className={styles.socials}>
           <Link
-            href="https://github.com/HamzaOubada2"
+            href="https://www.linkedin.com/in/hamza-oubada-4aa94b340/"
             target="_blank"
             className={styles.socialLink}
           >
