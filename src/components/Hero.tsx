@@ -24,7 +24,7 @@ export default function Hero() {
           <p className={styles.description}>
             Hi, I'm <span className={styles.highlight}>Hamza Oub</span>. A
             backend engineer focused on building high-performance APIs, secure
-            databases, and distributed systems that power modern applications.
+            databases
           </p>
 
           <div className={styles.actions}>
